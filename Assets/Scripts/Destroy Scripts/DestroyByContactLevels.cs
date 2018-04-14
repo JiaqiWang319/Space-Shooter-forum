@@ -16,11 +16,11 @@ public class DestroyByContactLevels : MonoBehaviour
         if (levelControllerObject != null)
         {
             levelOneController = levelControllerObject.GetComponent<LevelOneController>();
-        }
+        }/*
         if (levelOneController == null)
         {
             Debug.Log("Cannot find 'GameController' script");
-        }
+        }*/
     }
 
     void OnTriggerEnter(Collider other)

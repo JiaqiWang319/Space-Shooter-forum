@@ -10,6 +10,7 @@ using MySql.Data.MySqlClient;
 public class CreatenewUser : MonoBehaviour {
 	public InputField userName;
 	public InputField userPassword;
+	public string constr = "server=160.39.192.88;Database=mydb;User Id=root;password=onionst";
 	string username;
 	string password;
 	// Use this for initialization
@@ -18,7 +19,6 @@ public class CreatenewUser : MonoBehaviour {
 		password = null;
 	}
 	public void create_new_user () {
-		string constr = "server=160.39.193.170;Database=mydb;User Id=root;password=onionst";
 		MySqlConnection mycon = new MySqlConnection(constr);
 		mycon.Open(); 
 		string query = "insert into Player(Username, Password) values(" + "'"+ userName.text +"'"+ ", " + "'"+userPassword.text+"'" + ");";
