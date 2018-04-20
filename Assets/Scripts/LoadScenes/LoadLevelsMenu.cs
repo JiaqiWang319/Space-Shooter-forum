@@ -11,7 +11,7 @@ public class LoadLevelsMenu : MonoBehaviour {
 
     public InputField userName;
     public InputField userPassword;
-	public string constr = "server=160.39.192.88;Database=mydb;User Id=root;password=onionst";
+	string constr = "server=160.39.192.229;Database=mydb;User Id=root;password=onionst";
     string username;
     string password;
 
