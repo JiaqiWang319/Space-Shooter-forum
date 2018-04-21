@@ -28,7 +28,7 @@ public class LevelTwoExercise : MonoBehaviour {
     public InputField playerCodeInput;
     private enum Level { Win, Lose }
     Level level;
-    public GameObject safeGuardPanel;
+    private GameObject safeGuardPanel;
 
     //**** wave and enemy information ****//
 
