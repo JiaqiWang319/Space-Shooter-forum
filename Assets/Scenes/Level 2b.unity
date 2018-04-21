@@ -452,7 +452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &85728708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2635,7 +2635,6 @@ MonoBehaviour:
   playerTransform: {fileID: 1616407256}
   thrust: 3
   playerCodeInput: {fileID: 1531407698}
-  safeGuardPanel: {fileID: 1260695210}
 --- !u!82 &606445937
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7835,7 +7834,6 @@ MonoBehaviour:
   playerTransform: {fileID: 1616407256}
   thrust: 3
   playerCodeInput: {fileID: 1531407698}
-  safeGuardPanel: {fileID: 1260695210}
 --- !u!82 &1189093099
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8281,7 +8279,6 @@ MonoBehaviour:
   playerTransform: {fileID: 1616407256}
   thrust: 3
   playerCodeInput: {fileID: 1531407698}
-  safeGuardPanel: {fileID: 1260695210}
 --- !u!82 &1222793854
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10377,7 +10374,6 @@ MonoBehaviour:
   playerTransform: {fileID: 1616407256}
   thrust: 3
   playerCodeInput: {fileID: 1531407698}
-  safeGuardPanel: {fileID: 1260695210}
 --- !u!82 &1748350733
 AudioSource:
   m_ObjectHideFlags: 0
