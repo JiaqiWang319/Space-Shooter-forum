@@ -10,14 +10,14 @@ using MySql.Data.MySqlClient;
 public class Forum_Submit_TEXT : MonoBehaviour {
 
 	public InputField inputText;
-	string constr = "server=160.39.192.229;Database=mydb;User Id=root;password=onionst";
+	string constr = "server=192.168.43.239;Database=mydb;User Id=root;password=onionst";
 	string inputtext;
 	// Use this for initialization
 	void Start () {
 		
 	}
 	public void create_new_text () {
-		/*
+		
 		MySqlConnection mycon = new MySqlConnection(constr);
 		mycon.Open(); 
 		Debug.Log("success!");
@@ -29,7 +29,7 @@ public class Forum_Submit_TEXT : MonoBehaviour {
 
 		mycon.Close();
 		SceneManager.LoadScene(3);
-		*/
+		
 	}
 	// Update is called once per frame
 	void Update () {
