@@ -10,6 +10,7 @@ TagManager:
   - Asteroid1
   - WaveSafeguard
   - NextLevel
+  - TryAgain
   layers:
   - Default
   - TransparentFX

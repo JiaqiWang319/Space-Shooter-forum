@@ -29,6 +29,7 @@ public class LevelTwoExercise : MonoBehaviour {
     private enum Level { Win, Lose }
     Level level;
     private GameObject safeguardPanel;
+    private GameObject nextLevelPanel;
 
     //**** wave and enemy information ****//
 
@@ -61,6 +62,7 @@ public class LevelTwoExercise : MonoBehaviour {
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         safeguardPanel = GameObject.FindGameObjectWithTag("WaveSafeguard");
+        nextLevelPanel = GameObject.FindGameObjectWithTag("NextLevel");
     }
 
     public void EnactOption1()
@@ -167,11 +169,13 @@ public class LevelTwoExercise : MonoBehaviour {
             safeguardPanel.gameObject.SetActive(false);
             //safeGuardPanel.SetActive(false);
 
-            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+            if (level == Level.Win)
             {
                 // all enemies are destroyed
                 // Player wins the level
                 // SetActive a button to go to next level
+                nextLevelPanel.gameObject.SetActive(false);
+
                 Debug.Log("Player Wins the Level!");
             }
             else
