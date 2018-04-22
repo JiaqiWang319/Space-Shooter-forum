@@ -10253,8 +10253,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Page one: Consider these methods:\n\nStop()\n{\n\t//This method stops the
-    ship\n}\n\nShoot()\n{\n\t//this method shoots\n}\n\nNext Page to continue\n"
+  m_Text: "Page one: Consider these methods:\n\nlevel three methods()\n{\n\t....\n\t....\n\t....\n}\n\nNext
+    Page to continue\n"
 --- !u!222 &1616449771
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10944,7 +10944,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
       propertyPath: m_Text
-      value: Level Two
+      value: Level Three
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
       propertyPath: m_FontData.m_FontSize
@@ -10957,6 +10957,26 @@ Prefab:
     - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
       propertyPath: m_FontData.m_MaxSize
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
@@ -11100,7 +11120,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Level Two:
+  m_Text: 'Level Three:
 
 
     Click Start to begin coding!

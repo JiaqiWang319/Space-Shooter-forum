@@ -28,7 +28,7 @@ public class LevelTwoExercise : MonoBehaviour {
     public InputField playerCodeInput;
     private enum Level { Win, Lose }
     Level level;
-    private GameObject safeGuardPanel;
+    private GameObject safeguardPanel;
 
     //**** wave and enemy information ****//
 
@@ -60,7 +60,7 @@ public class LevelTwoExercise : MonoBehaviour {
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        safeGuardPanel = GameObject.FindGameObjectWithTag("HazardsSafeguard");
+        safeguardPanel = GameObject.FindGameObjectWithTag("WaveSafeguard");
     }
 
     public void EnactOption1()
@@ -164,7 +164,7 @@ public class LevelTwoExercise : MonoBehaviour {
         }
         else // Player has no moves left in this block
         {
-            GameObject.FindGameObjectWithTag("HazardsSafeguard").SetActive(false);
+            safeguardPanel.gameObject.SetActive(false);
             //safeGuardPanel.SetActive(false);
 
             if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)

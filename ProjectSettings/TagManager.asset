@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - LevelController
   - Asteroid1
+  - WaveSafeguard
+  - NextLevel
   layers:
   - Default
   - TransparentFX
