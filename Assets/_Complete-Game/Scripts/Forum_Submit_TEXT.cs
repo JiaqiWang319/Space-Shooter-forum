@@ -10,14 +10,13 @@ using MySql.Data.MySqlClient;
 public class Forum_Submit_TEXT : MonoBehaviour {
 
 	public InputField inputText;
-	string constr = "server=192.168.43.239;Database=mydb;User Id=root;password=onionst";
+	string constr = "server= sql9.freemysqlhosting.net;Database=sql9234326;User Id=sql9234326;password=n29lCjJ5fj";
 	string inputtext;
 	// Use this for initialization
 	void Start () {
 		
 	}
 	public void create_new_text () {
-		/*
 		MySqlConnection mycon = new MySqlConnection(constr);
 		mycon.Open(); 
 		Debug.Log("success!");
@@ -28,6 +27,7 @@ public class Forum_Submit_TEXT : MonoBehaviour {
 			Debug.Log("Create a new text success!"); 
 
 		mycon.Close();
+		/*
 		SceneManager.LoadScene(3);
 		*/
 	}

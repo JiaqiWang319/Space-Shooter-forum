@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 public class CreatenewUser : MonoBehaviour {
 	public InputField userName;
 	public InputField userPassword;
-	string constr = "server=192.168.43.239;Database=mydb;User Id=root;password=onionst";
+	string constr = "server= sql9.freemysqlhosting.net;Database=sql9234326;User Id=sql9234326;password=n29lCjJ5fj";
 	string username;
 	string password;
 	// Use this for initialization
