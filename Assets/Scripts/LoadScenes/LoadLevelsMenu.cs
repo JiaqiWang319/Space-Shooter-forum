@@ -11,6 +11,7 @@ public class LoadLevelsMenu : MonoBehaviour {
 
     public InputField userName;
     public InputField userPassword;
+	public Text passworderror;
 	string constr = "server= sql9.freemysqlhosting.net;Database=sql9234326;User Id=sql9234326;password=n29lCjJ5fj";
     string username;
     string password;
@@ -23,21 +24,29 @@ public class LoadLevelsMenu : MonoBehaviour {
 	public void  get_password_from_database() {
 		MySqlConnection mycon = new MySqlConnection(constr);
 		mycon.Open();
-		string query = "select password from Player where Username ="+ "'"+ userName.text +"';";
-		MySqlDataAdapter dataAdapter = new MySqlDataAdapter(query, mycon);
-		DataSet ds = new DataSet();
-		dataAdapter.Fill(ds);
-		if ((ds.Tables [0].ToString ()).Length == 0) {
+		string count = "select count(*) from Player where Username=" + "'" + userName.text + "';";
+		MySqlDataAdapter dataAdapter1 = new MySqlDataAdapter(count, mycon);
+		DataSet ds2 = new DataSet ();
+		dataAdapter1.Fill (ds2);
+		string count_num = (ds2.Tables [0].Rows [0] [0]).ToString();
+		int num = int.Parse (count_num);
+		if (num == 0) {
 			Debug.Log ("No user exists!");
+			passworderror.text="No user exists!";
 		}
 		else {
+			string query = "select password from Player where Username ="+ "'"+ userName.text +"';";
+			MySqlDataAdapter dataAdapter = new MySqlDataAdapter(query, mycon);
+			DataSet ds = new DataSet();
+			dataAdapter.Fill(ds);
 			string db_password = (ds.Tables[0].Rows[0][0]).ToString();
 			if (db_password == userPassword.text) {
 				Debug.Log ("Log in success!");
 				LoadLevelMenu ();
-			}
-			else
+			} else {
 				Debug.Log ("Password error!");
+				passworderror.text="Password error!";
+			}
 		}
 	}
     // Update is called once per frame
