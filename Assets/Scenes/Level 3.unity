@@ -2639,7 +2639,7 @@ MonoBehaviour:
   shotSpawn: {fileID: 1804732710}
   playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 1531407698}
+  playerCodeInput: {fileID: 0}
 --- !u!82 &606445937
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8104,7 +8104,7 @@ MonoBehaviour:
   shotSpawn: {fileID: 1804732710}
   playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 1531407698}
+  playerCodeInput: {fileID: 0}
 --- !u!82 &1189093099
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8560,7 +8560,7 @@ MonoBehaviour:
   shotSpawn: {fileID: 1804732710}
   playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 1531407698}
+  playerCodeInput: {fileID: 0}
 --- !u!82 &1222793854
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10960,7 +10960,7 @@ MonoBehaviour:
   shotSpawn: {fileID: 1804732710}
   playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 1531407698}
+  playerCodeInput: {fileID: 0}
 --- !u!82 &1748350733
 AudioSource:
   m_ObjectHideFlags: 0
