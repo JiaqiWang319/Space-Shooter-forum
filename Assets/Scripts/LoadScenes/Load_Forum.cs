@@ -16,7 +16,7 @@ public class Load_Forum : MonoBehaviour {
 	public void LoadForum()
 	{
 
-			SceneManager.LoadScene(3);
+			SceneManager.LoadScene(1);
 
 
 	}

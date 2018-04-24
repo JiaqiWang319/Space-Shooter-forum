@@ -8,7 +8,7 @@ public class LoadLevelOne : MonoBehaviour {
 	// Update is called once per frame
 	public void LoadLevel1 ()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 /*
     public void Quit()

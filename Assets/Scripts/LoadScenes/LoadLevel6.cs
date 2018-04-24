@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextLevel3 : MonoBehaviour {
+public class LoadLevel6 : MonoBehaviour {
 
     // Update is called once per frame
-    public void LoadLevel3()
+    public void LoadLvl6()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(8);
     }
     /*
         public void Quit()

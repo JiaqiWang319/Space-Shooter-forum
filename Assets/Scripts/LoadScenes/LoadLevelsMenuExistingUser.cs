@@ -27,7 +27,7 @@ public class LoadLevelsMenuExistingUser : MonoBehaviour {
         }
         else if (userName.text != null)// && userPassword.text != null)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }

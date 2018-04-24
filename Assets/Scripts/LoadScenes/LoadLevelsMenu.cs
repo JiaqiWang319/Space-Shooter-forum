@@ -55,7 +55,7 @@ public class LoadLevelsMenu : MonoBehaviour {
 
         if (userName.text != null)// && userPassword.text != null)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
 
     }
