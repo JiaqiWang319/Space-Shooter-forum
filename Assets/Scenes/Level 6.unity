@@ -3624,8 +3624,8 @@ MonoBehaviour:
   m_Text: "Which is the correct way to execute\nif/else blocks in Python?\n1. boolean
     bool = True;\n     if(bool) {print \"Hello\"}\n     else {print \"Bye\"}\n2. boolean
     bool = False;\n    if(bool) {print \"Hello\";}\n    else {;}\n3. bool = True;\n
-    \    if(bool) {print \"Hello\"}\n     else {print \"Bye\"}\n4. boolean = True\nif(boolean)
-    {print \"Hello\"}\nelse {print \"Bye\"}"
+    \    if(bool) {print \"Hello\"}\n     else {print \"Bye\"}\n4. boolean = True\n
+    \    if(boolean) {print \"Hello\"}\n     else {print \"Bye\"}"
 --- !u!222 &909400357
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10218,7 +10218,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Page one:
+  m_Text: 'Page One:
 
 
     In computer science, if/else statements
@@ -11773,7 +11773,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Next Level
+  m_Text: Next Difficulty
 --- !u!222 &2118807323
 CanvasRenderer:
   m_ObjectHideFlags: 0

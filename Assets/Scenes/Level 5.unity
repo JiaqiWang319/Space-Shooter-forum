@@ -3624,9 +3624,9 @@ MonoBehaviour:
   m_Text: "Which of the following options is the correct way to declare a while loop
     in\nPython?\n1. count = 0\n    while (count < 5):\n           print 'The count
     is:', count\n           count = count + 1\n2. do while (i < 2){\n                print
-    'The i is:', i\n   \ti = i + 1}\n3. while values = [\u201Chello\u201D, \u201Cworld\u201D]\n
-    \   print values\n4. while values = [\u201Chello\u201D, \u201Cworld\u201D]\n    for
-    i in values:\n           print values"
+    'The i is:', i\n                 i = i + 1}\n3. while values = [\u201Chello\u201D,
+    \u201Cworld\u201D]\n    print values\n4. while values = [\u201Chello\u201D, \u201Cworld\u201D]\n
+    \   for i in values:\n           print values"
 --- !u!222 &909400357
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10229,7 +10229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Page one:\n\nOne can interate through specific \nstructures to get access
+  m_Text: "Page One:\n\nOne can interate through specific \nstructures to get access
     to each of the \nindividual elements within that structure.\n\nNext Page to continue\n"
 --- !u!222 &1616449771
 CanvasRenderer:
