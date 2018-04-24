@@ -9819,13 +9819,11 @@ MonoBehaviour:
   m_Text: 'Page Three:
 
 
-    Usually, to declare a variable, you have to
+    An example of a variable declaration in
 
-    declare the variable name on the left hand
+    Python looks like this:
 
-    side and declare the value on the right hand
-
-    side.
+    hello = "hi"
 
 
     Try Code to apply what you''ve learned
@@ -10218,8 +10216,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Page One: \n\nConsider the following problem\ninvolving variable syntax
-    in python.\n\nNext Page to continue\n"
+  m_Text: "Page One: \n\nIn computer science, a variable holds onto a\nspecific value
+    that can change depending on\nconditions.\n\nNext Page to continue\n"
 --- !u!222 &1616449771
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10762,11 +10760,13 @@ MonoBehaviour:
   m_Text: 'Page Two:
 
 
-    In computer science, a variable holds onto a
+    Usually, to declare a variable, you have to
 
-    specific value that can change depending on
+    declare the variable name on the left hand
 
-    conditions.
+    side and declare the value on the right hand
+
+    side.
 
 
     Next Page to continue
