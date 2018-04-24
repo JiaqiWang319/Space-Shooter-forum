@@ -33,7 +33,7 @@ public class LevelOnePlayerController : MonoBehaviour
     void Update()
     {
         playerTransform = GetComponent<Transform>();
-
+        /*
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         //if (playerTransform.position.x == enemyTransform.position.x)
         {
@@ -42,7 +42,7 @@ public class LevelOnePlayerController : MonoBehaviour
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation); // as GameObject
             GetComponent<AudioSource>().Play();
         }
-
+        */
         //Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
     }
 

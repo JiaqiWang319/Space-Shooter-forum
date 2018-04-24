@@ -25,7 +25,6 @@ public class LevelOneExercises : MonoBehaviour {
 	private int enemyCount;
 
 	// the player's answer code to the exercise
-	public InputField playerCodeInput;
 	private enum Level { Win, Lose }
 	Level level;
 	private GameObject safeguardPanel;

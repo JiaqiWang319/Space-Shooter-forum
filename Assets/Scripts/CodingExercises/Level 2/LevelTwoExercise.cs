@@ -25,7 +25,6 @@ public class LevelTwoExercise : MonoBehaviour {
     private int enemyCount;
 
     // the player's answer code to the exercise
-    public InputField playerCodeInput;
     private enum Level { Win, Lose }
     Level level;
     private GameObject safeguardPanel;
@@ -68,7 +67,6 @@ public class LevelTwoExercise : MonoBehaviour {
     public void EnactOption1()
     {
         level = Level.Lose;
-        playerCodeInput.text = "i / i";
 
         enemyLocations[0] = 1;
         enemyLocations[1] = 1;
@@ -82,7 +80,6 @@ public class LevelTwoExercise : MonoBehaviour {
     public void EnactOption2()
     {
         level = Level.Lose;
-        playerCodeInput.text = "i + 2";
 
         enemyLocations[0] = 1;
         enemyLocations[1] = 3;
@@ -96,7 +93,6 @@ public class LevelTwoExercise : MonoBehaviour {
     public void EnactOption3()
     {
         level = Level.Lose;
-        playerCodeInput.text = "i + 3";
 
         enemyLocations[0] = 1;
         enemyLocations[1] = 4;
@@ -110,7 +106,6 @@ public class LevelTwoExercise : MonoBehaviour {
     public void EnactOption4()
     {
         level = Level.Win;
-        playerCodeInput.text = "i * 3";
 
         enemyLocations[0] = 3;
         enemyLocations[1] = 6;

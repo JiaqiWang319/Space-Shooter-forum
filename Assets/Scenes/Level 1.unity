@@ -1337,7 +1337,6 @@ MonoBehaviour:
   shotSpawn: {fileID: 1804732710}
   playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 0}
 --- !u!82 &198096546
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1457,8 +1456,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 9e165b96e3d29f140a7ffd02675c8f3d, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 198096545}
+        m_MethodName: EnactOption1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1485,17 +1484,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 102900000, guid: 8bfd7e8fa8e9fbc48868a69651e6bd97, type: 3}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3156,7 +3144,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 15899769}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -3323,14 +3311,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 800180323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fad2632c7e4c91f4a80089364d307462, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e165b96e3d29f140a7ffd02675c8f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shot: {fileID: 1260500424729728, guid: 2ddda2dd0919b5f4abf338b229307988, type: 2}
-  shotSpawn: {fileID: 0}
-  playerTransform: {fileID: 0}
+  shotSpawn: {fileID: 1804732710}
+  playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 0}
 --- !u!82 &800180326
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3928,8 +3915,9 @@ GameObject:
   - component: {fileID: 879620146}
   - component: {fileID: 879620145}
   - component: {fileID: 879620144}
+  - component: {fileID: 879620143}
   m_Layer: 5
-  m_Name: NextPage(CodeEx)
+  m_Name: TryCodeButton(CodeEx)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3954,6 +3942,23 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -230}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &879620143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879620141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be51bb884fa3873479a1519a1161ce52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hazards:
+  - {fileID: 1262101059992330, guid: 7df0fe775937d584285d4525ab67809b, type: 2}
+  - {fileID: 1740190016711492, guid: 452d66179ece9a94abccf5834950327a, type: 2}
+  - {fileID: 1415025604736784, guid: 08deb6424a69fc74787ebcb874abeca3, type: 2}
+  - {fileID: 1262101059992330, guid: 7df0fe775937d584285d4525ab67809b, type: 2}
+  hazardCount: 4
 --- !u!82 &879620144
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4087,6 +4092,17 @@ MonoBehaviour:
       - m_Target: {fileID: 84603989}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 879620143}
+        m_MethodName: SpawnWaveOne
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7632,14 +7648,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1019513149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fad2632c7e4c91f4a80089364d307462, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e165b96e3d29f140a7ffd02675c8f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shot: {fileID: 1260500424729728, guid: 2ddda2dd0919b5f4abf338b229307988, type: 2}
-  shotSpawn: {fileID: 0}
-  playerTransform: {fileID: 0}
+  shotSpawn: {fileID: 1804732710}
+  playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 0}
 --- !u!82 &1019513152
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10785,14 +10800,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1921593859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fad2632c7e4c91f4a80089364d307462, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e165b96e3d29f140a7ffd02675c8f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shot: {fileID: 1260500424729728, guid: 2ddda2dd0919b5f4abf338b229307988, type: 2}
-  shotSpawn: {fileID: 0}
-  playerTransform: {fileID: 0}
+  shotSpawn: {fileID: 1804732710}
+  playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 0}
 --- !u!82 &1921593862
 AudioSource:
   m_ObjectHideFlags: 0
