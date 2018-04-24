@@ -9818,23 +9818,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Page Three:
-
-
-    Print statements can be helpful when you''re
-
-    new to programming to check if you''re
-
-    manipulating certain variables or fulfilling
-
-    certain logic conditions.
-
-
-    Try Code to apply what you''ve learned
-
-    Previous Page to review the material
-
-'
+  m_Text: "Page Three:\n\nExamples of print statments in Python-\n1. print(\"hello\")\n2.
+    Given a variable named world, the following code-\n     print(world)\n\nTry Code
+    to apply what you've learned\nPrevious Page to review the material\n"
 --- !u!222 &1531306919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10226,6 +10212,10 @@ MonoBehaviour:
     In programming environments, you can
 
     print out values or statements.
+
+    The exact syntax for this varies by
+
+    language.
 
 
     Next Page to continue
@@ -11156,9 +11146,13 @@ MonoBehaviour:
   m_Text: 'Page Two:
 
 
-    The exact syntax for print statements vary
+    Print statements can be helpful when you''re
 
-    from language to language.
+    new to programming to check if you''re
+
+    manipulating certain variables or fulfilling
+
+    certain logic conditions.
 
 
     Next Page to continue
