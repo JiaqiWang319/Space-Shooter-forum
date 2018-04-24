@@ -1,137 +1,185 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class LevelOneExercises : MonoBehaviour
-{
-    //      ************       //
-    // Evasive Maneuver Script //
-    //private float targetManeuver;
-    public float dodge = 5f;
-    public float smoothing = 7.5f;
-    public float tilt = 10f;
+public class LevelOneExercises : MonoBehaviour {
 
-    public Vector2 startWait;
-    public Vector2 maneuverTime;
-    public Vector2 maneuverWait;
-    public Boundary boundary;
+	//**** player ship information ****//
 
-    // enemy ship flies toward player
-    //private Transform playerTransform;
-    private float currentSpeed;
-    private Rigidbody rb;
+	public GameObject shot;
+	public Transform shotSpawn;
+	public Transform playerTransform;
+	public float thrust = 3;
 
-    private Transform playerTransform;
-    private Transform enemyTransform;
-    // Evasive Maneuver Script //
-    //      ************       //
+	private bool movingLeft = false;
+	private bool movingRight = false;
+
+	//**** player ship information ****//
 
 
-    enum Waves { Zero, One, Two, Three };
-    Waves wave = Waves.Zero;
+	//**** wave and enemy information ****//
 
-    public float thrust;
+	// enemy location information
+	private float[] enemyLocations = { 0, 0, 0, 0 };
+	private int enemyCount;
 
-    public Transform target;
-    public float speed;
+	// the player's answer code to the exercise
+	public InputField playerCodeInput;
+	private enum Level { Win, Lose }
+	Level level;
+	private GameObject safeguardPanel;
+	private GameObject nextLevelPanel;
 
-    Vector3 right = new Vector3(1f, 0, 0); //Vector in the direction you want to move in.
-    Vector3 left = new Vector3(-1f, 0, 0); //Vector "           "
-
-
-
-    // Use this for initialization
-    public void WaveOneAction()
-    {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        enemyTransform = GameObject.FindGameObjectWithTag("Enemy").transform;
-        //rb = GetComponent<Rigidbody>();
+	//**** wave and enemy information ****//
 
 
-        while (playerTransform.position.x <= 13)
-        {
-            //playerTransform.Translate(Vector3.right * 1, Camera.main.transform);
-            float step = speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-        }
-        
-    }
+	private void Update()
+	{
+		if (movingLeft && playerTransform.position.x <= enemyLocations[enemyCount])  // enemy and player x positions are the same, so just fire
+		{
+			Stop();
+			Shoot();
+			SeekNextEnemy();
+		}
 
-    public void WaveTwoAction()
-    {
-        //wave = Waves.Two;
-        for (int i = 0; i < 4; i++)
-        {
-            //enemyTransform = LevelOneController.hazards[i].transform;
-            //if (Input.GetKeyDown("right"))
-            if (enemyTransform.position.x > playerTransform.position.x)
-            {//Using update to capture the keypress.
-                StartCoroutine(SmoothMove(right, 1f)); //Calling the coroutine.
-            }
-            else if (enemyTransform.position.x < playerTransform.position.x)
-            {
-                StartCoroutine(SmoothMove(left, 1f)); //Calling the coroutine
-            }
-            else
-            {
-                // enemy and player x positions are the same, so just fire
-                ;
-            }
-        }
-        
-    }
+		else if (movingRight && playerTransform.position.x >= enemyLocations[enemyCount])
+		{
+			Stop();
+			Shoot();
+			SeekNextEnemy();
+		}
+	}
 
-    void WaveThreeAction()
-    {
+	// Update is called once per frame
+	void FixedUpdate()
+	{
+		if (movingLeft) { playerTransform.Translate(Vector3.left * thrust * Time.deltaTime); }
+		else if (movingRight) { playerTransform.Translate(Vector3.right * thrust * Time.deltaTime); }
+	}
 
-    }
+	void Start()
+	{
+		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+		safeguardPanel = GameObject.FindGameObjectWithTag("WaveSafeguard");
+		nextLevelPanel = GameObject.FindGameObjectWithTag("NextLevel");
+	}
 
-    private void FixedUpdate()
-    {
-        if (wave == Waves.Two)
-        {
-            rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
-            //currentSpeed = rb.velocity.z;
+	public void EnactOption1()
+	{
+		level = Level.Lose;
 
-            float newManeuver = Mathf.MoveTowards(rb.velocity.x, 1/*targetManeuver*/, Time.deltaTime * smoothing);
-            rb.velocity = new Vector3(newManeuver, 0.0f, .00000001f /*currentSpeed*/);
-            rb.position = new Vector3
-                (
-                    Mathf.Clamp(rb.position.x, boundary.xMin, boundary.xMax),
-                    0.0f,
-                    Mathf.Clamp(rb.position.z, boundary.zMin, boundary.zMax)
-                );
+		enemyLocations[0] = 1;
+		enemyLocations[1] = 1;
+		enemyLocations[2] = 1;
+		enemyLocations[3] = 1;
+		enemyCount = 0;
 
-            rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
-        }
+		EnactWaveOne(enemyLocations[enemyCount]);
+	}
 
-        wave = Waves.Zero;
-    }
+	public void EnactOption2()
+	{
+		level = Level.Lose;
 
+		enemyLocations[0] = 1;
+		enemyLocations[1] = 3;
+		enemyLocations[2] = 5;
+		enemyLocations[3] = 7;
+		enemyCount = 0;
 
+		EnactWaveOne(enemyLocations[enemyCount]);
+	}
 
-    void Update()
-    {
+	public void EnactOption3()
+	{
+		level = Level.Win;
 
-    }
+		enemyLocations[0] = 3;
+		enemyLocations[1] = 6;
+		enemyLocations[2] = 9;
+		enemyLocations[3] = 12;
+		enemyCount = 0;
 
+		EnactWaveOne(enemyLocations[enemyCount]);
+	}
 
-    IEnumerator SmoothMove(Vector3 direction, float speed)
-    {
-        float startime = Time.time;
-        Vector3 start_pos = playerTransform.position; //Starting position.
-        Vector3 end_pos = enemyTransform.position + direction; //Ending position.
+	public void EnactOption4()
+	{
+		level = Level.Lose;
 
-        while (start_pos != end_pos && ((Time.time - startime) * speed) < 1f)
-        {
-            float move = Mathf.Lerp(0, 1, (Time.time - startime) * speed);
+		enemyLocations[0] = 1;
+		enemyLocations[1] = 4;
+		enemyLocations[2] = 7;
+		enemyLocations[3] = 10;
+		enemyCount = 0;
 
-            transform.position += direction * move;
+		EnactWaveOne(enemyLocations[enemyCount]);
+	}
 
-            yield return null;
-        }
-        yield return new WaitForSeconds(5);
-    }
+	private void EnactWaveOne(float enemyLocation)
+	{
+		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+
+		Debug.Log("****WaveOneAction invoked...");
+		Debug.Log("Player location is: " + playerTransform.position);
+		Debug.Log("Enemy's position: " + enemyLocations[enemyCount]);
+		enemyLocation = enemyLocations[enemyCount];
+
+		if (playerTransform.position.x < enemyLocation)
+		{
+			Debug.Log("enemy is farther right than player");
+			movingRight = true;
+		}
+		else if (playerTransform.position.x > enemyLocation)
+		{
+			Debug.Log("enemy is farther left than player");
+			movingLeft = true;
+		}
+	}
+
+	private void Stop()
+	{
+		movingLeft = false;
+		movingRight = false;
+	}
+
+	private void Shoot()
+	{
+		Debug.Log("enemy is at the same x position as player");
+		// Instantiate shot from shotSpawn location
+		Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+		GetComponent<AudioSource>().Play();
+	}
+
+	private void SeekNextEnemy()
+	{
+		enemyCount++;
+		if (enemyCount < enemyLocations.Length)  // Player has moves left
+		{
+			Debug.Log("Number of enemies left: " + GameObject.FindGameObjectsWithTag("Enemy").Length);          
+			EnactWaveOne(enemyCount);
+		}
+		else // Player has no moves left in this block
+		{
+			safeguardPanel.gameObject.SetActive(false);
+			//safeGuardPanel.SetActive(false);
+
+			if (level == Level.Win)
+			{
+				// all enemies are destroyed
+				// Player wins the level
+				// SetActive a button to go to next level
+				nextLevelPanel.gameObject.SetActive(false);
+
+				Debug.Log("Player Wins the Level!");
+			}
+			else
+			{
+				// there are enemies left
+				// Player gets feedback on why their code didn't work
+				Debug.Log("That code didn't work!");
+			}
+		}
+	}
 }
-
-
