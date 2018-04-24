@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class LevelTwoExercise : MonoBehaviour {
+public class WinningOption4 : MonoBehaviour {
 
     //**** player ship information ****//
 
@@ -67,11 +66,10 @@ public class LevelTwoExercise : MonoBehaviour {
     public void EnactOption1()
     {
         level = Level.Lose;
-
         enemyLocations[0] = 1;
-        enemyLocations[1] = 1;
-        enemyLocations[2] = 1;
-        enemyLocations[3] = 1;
+        enemyLocations[1] = 3;
+        enemyLocations[2] = 5;
+        enemyLocations[3] = 7;
         enemyCount = 0;
 
         EnactWaveOne(enemyLocations[enemyCount]);
@@ -82,9 +80,9 @@ public class LevelTwoExercise : MonoBehaviour {
         level = Level.Lose;
 
         enemyLocations[0] = 1;
-        enemyLocations[1] = 3;
-        enemyLocations[2] = 5;
-        enemyLocations[3] = 7;
+        enemyLocations[1] = 1;
+        enemyLocations[2] = 1;
+        enemyLocations[3] = 1;
         enemyCount = 0;
 
         EnactWaveOne(enemyLocations[enemyCount]);
@@ -156,7 +154,7 @@ public class LevelTwoExercise : MonoBehaviour {
         enemyCount++;
         if (enemyCount < enemyLocations.Length)  // Player has moves left
         {
-            Debug.Log("Number of enemies left: " + GameObject.FindGameObjectsWithTag("Enemy").Length);          
+            Debug.Log("Number of enemies left: " + GameObject.FindGameObjectsWithTag("Enemy").Length);
             EnactWaveOne(enemyCount);
         }
         else // Player has no moves left in this block
