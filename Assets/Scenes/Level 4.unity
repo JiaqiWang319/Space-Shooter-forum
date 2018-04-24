@@ -3626,10 +3626,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Which of the following options is the \ncorrect way to declare an array
-    in Python?\n1. array = [\u201Chello\u201D, \u201Cworld\u201D];\n2. arr = [\u201Chello\u201D,
-    \u201Cworld\u201D]\n3. array arr = [\u201Chello\u201D, \u201Cworld\u201D]\n4.
-    arr = [\u201Chello\u201D, \u201Cworld\u201D]"
+  m_Text: "Which of the following options is the correct way to write a for-loop in
+    python?\n1. for x in range(0, 3):\n      print \"We're on time %d\" % (x)\n2.
+    for (int i = 0; i<array.length(); i++){\n\ti = i+2;\nprint i;\n}\n3. for x in
+    range(0, 3){\n      print \"We're on time %d\" % (x)\n}\n4. do (for int i = 0
+    in range(0, 3)){\n\ti = i+2\nprint i\n}"
 --- !u!222 &909400357
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9839,11 +9840,9 @@ MonoBehaviour:
   m_Text: 'Page Three:
 
 
-    You can assign a specific value at a specific
+    For loops run the same code with different
 
-    index in an array. You can also get the value
-
-    in an index back from the array.
+    values each time.
 
 
     Try Code to apply what you''ve learned
@@ -10236,17 +10235,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Page one:
-
-
-    In computer science, an array is a structure
-
-    that organizes a set of data/values.
-
-
-    Next Page to continue
-
-'
+  m_Text: "Page one:\n\nOne can interate through specific \nstructures to get access
+    to each of the \nindividual elements within that structure.\n\nNext Page to continue\n"
 --- !u!222 &1616449771
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11090,7 +11080,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Level Three:
+  m_Text: 'Level Four:
 
 
     Click Start to begin coding!
@@ -11177,9 +11167,9 @@ MonoBehaviour:
   m_Text: 'Page Two:
 
 
-    Arrays are structured so that each value in
+    There are various types of loops that one
 
-    the array correspond to a specific index.
+    can use to iterate through stuctures.
 
 
     Next Page to continue

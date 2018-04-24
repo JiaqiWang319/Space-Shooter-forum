@@ -3630,7 +3630,7 @@ MonoBehaviour:
   m_Text: "Which of the following options is the \ncorrect way to declare an array
     in Python?\n1. array = [\u201Chello\u201D, \u201Cworld\u201D];\n2. arr = [\u201Chello\u201D,
     \u201Cworld\u201D]\n3. array arr = [\u201Chello\u201D, \u201Cworld\u201D]\n4.
-    arr = [\u201Chello\u201D, \u201Cworld\u201D]"
+    arr = [\u201Chello\u201D, \u201Cworld\u201D];"
 --- !u!222 &909400357
 CanvasRenderer:
   m_ObjectHideFlags: 0
