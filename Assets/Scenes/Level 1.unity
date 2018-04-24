@@ -970,12 +970,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 152715113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6810565d59c2e4f418b6b52760a49268, type: 3}
+  m_Script: {fileID: 11500000, guid: e8bed9eef903c3948be158c6dd3a9512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userName: {fileID: 0}
-  userPassword: {fileID: 0}
-  passworderror: {fileID: 0}
 --- !u!114 &152715116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,7 +1013,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 152715115}
-        m_MethodName: LoadLevelMenu
+        m_MethodName: LoadLevelHub
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
