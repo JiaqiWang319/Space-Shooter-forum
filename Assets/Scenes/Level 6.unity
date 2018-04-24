@@ -821,12 +821,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 152715113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6810565d59c2e4f418b6b52760a49268, type: 3}
+  m_Script: {fileID: 11500000, guid: e8bed9eef903c3948be158c6dd3a9512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userName: {fileID: 0}
-  userPassword: {fileID: 0}
-  passworderror: {fileID: 0}
 --- !u!114 &152715116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,7 +864,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 152715115}
-        m_MethodName: LoadLevelMenu
+        m_MethodName: LoadLevelHub
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1328,12 +1325,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 309438003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6810565d59c2e4f418b6b52760a49268, type: 3}
+  m_Script: {fileID: 11500000, guid: 0556df95315c96242a5db8dbfd3def51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userName: {fileID: 0}
-  userPassword: {fileID: 0}
-  passworderror: {fileID: 0}
 --- !u!114 &309438006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1374,7 +1368,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 309438005}
-        m_MethodName: LoadLevelMenu
+        m_MethodName: LoadForum
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2641,7 +2635,6 @@ MonoBehaviour:
   shotSpawn: {fileID: 1804732710}
   playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 0}
 --- !u!82 &606445937
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3617,7 +3610,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
@@ -3628,12 +3621,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Which of the following options is the \ncorrect way to execute if/else\nblocks
-    in Python?\n1. boolean bool = true;\nif(bool) {\n   print \"Hello\"\n}else {\n
-    \  print \"Bye\"\n}\n2. boolean bool = true;\nif(bool) {\n   print \"Hello\";\n}else
-    {\n   print \"Bye\";\n}\n3. boolean bool = false;\nif(bool) {\n   print \"Hello\"\n}else
-    {\n   print \"Bye\"\n}\n4. boolean = True\nif(boolean) {\n   print \"Hello\"\n}else
-    {\n   print \"Bye\"\n}"
+  m_Text: "Which is the correct way to execute\nif/else blocks in Python?\n1. boolean
+    bool = True;\n     if(bool) {print \"Hello\"}\n     else {print \"Bye\"}\n2. boolean
+    bool = False;\n    if(bool) {print \"Hello\";}\n    else {;}\n3. bool = True;\n
+    \    if(bool) {print \"Hello\"}\n     else {print \"Bye\"}\n4. boolean = True\nif(boolean)
+    {print \"Hello\"}\nelse {print \"Bye\"}"
 --- !u!222 &909400357
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8033,7 +8025,6 @@ MonoBehaviour:
   shotSpawn: {fileID: 1804732710}
   playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 0}
 --- !u!82 &1189093099
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8489,7 +8480,6 @@ MonoBehaviour:
   shotSpawn: {fileID: 1804732710}
   playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 0}
 --- !u!82 &1222793854
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10669,7 +10659,6 @@ MonoBehaviour:
   shotSpawn: {fileID: 1804732710}
   playerTransform: {fileID: 1616407256}
   thrust: 3
-  playerCodeInput: {fileID: 0}
 --- !u!82 &1748350733
 AudioSource:
   m_ObjectHideFlags: 0
