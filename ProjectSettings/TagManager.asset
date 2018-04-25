@@ -11,6 +11,10 @@ TagManager:
   - WaveSafeguard
   - NextLevel
   - TryAgain
+  - Xoption1
+  - Xoption2
+  - Xoption3
+  - Xoption4
   layers:
   - Default
   - TransparentFX

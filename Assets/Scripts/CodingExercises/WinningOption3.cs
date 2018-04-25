@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WinningOption3 : MonoBehaviour {
 
@@ -170,12 +172,6 @@ public class WinningOption3 : MonoBehaviour {
                 nextLevelPanel.gameObject.SetActive(false);
 
                 Debug.Log("Player Wins the Level!");
-            }
-            else
-            {
-                // there are enemies left
-                // Player gets feedback on why their code didn't work
-                Debug.Log("That code didn't work!");
             }
         }
     }
