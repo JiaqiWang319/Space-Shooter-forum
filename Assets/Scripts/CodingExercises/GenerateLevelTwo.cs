@@ -28,7 +28,7 @@ public class GenerateLevelTwo : MonoBehaviour
 
         for (int i = 0; i < hazardCount; i++)
         {
-            GameObject hazard = hazards[1];
+            GameObject hazard = hazards[i];
 
             Vector3 spawnPosition = new Vector3(xPos + xOffset, 0f, zPos + zOffset);
             //Vector3 spawnPosition = new Vector3(8, 0f, zPos + zOffset);
