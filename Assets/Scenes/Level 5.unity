@@ -9820,7 +9820,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
@@ -9831,19 +9831,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Page Three:
-
-
-    While loops execute a set of code until a
-
-    specific condition is no longer met.
-
-
-    Try Code to apply what you''ve learned
-
-    Previous Page to review the material
-
-'
+  m_Text: "Page Three:\n\nExample in Python-\n\nx = 3\nwhile (x > 0):\n    print (x)\n
+    \   x = x-1\n//prints:\n3\n2\n1\n\nTry Code to apply what you've learned\nPrevious
+    Page to review the material\n"
 --- !u!222 &1531306919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11163,6 +11153,10 @@ MonoBehaviour:
     There are various types of loops that one
 
     can use to iterate through stuctures.
+
+    While loops execute a set of code until a
+
+    specific condition is no longer met.
 
 
     Next Page to continue

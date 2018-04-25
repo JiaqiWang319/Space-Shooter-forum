@@ -9821,11 +9821,11 @@ MonoBehaviour:
   m_Text: 'Page Three:
 
 
-    You can assign a specific value at a specific
+    Examples in Python -
 
-    index in an array. You can also get the value
+    1. arrayOfStrings = ["hi","there"]
 
-    in an index back from the array.
+    2. variableName = [1, 2, 3, 4, 5]
 
 
     Try Code to apply what you''ve learned
@@ -10224,6 +10224,10 @@ MonoBehaviour:
     In computer science, an array is a structure
 
     that organizes a set of data/values.
+
+    Arrays are structured so that each value in
+
+    the array correspond to a specific index.
 
 
     Next Page to continue

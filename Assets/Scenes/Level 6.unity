@@ -3625,7 +3625,7 @@ MonoBehaviour:
     bool = True;\n     if(bool) {print \"Hello\"}\n     else {print \"Bye\"}\n2. boolean
     bool = False;\n    if(bool) {print \"Hello\";}\n    else {;}\n3. bool = True;\n
     \    if(bool) {print \"Hello\"}\n     else {print \"Bye\"}\n4. boolean = True\n
-    \    if(boolean) {print \"Hello\"}\n     else {print \"Bye\"}"
+    \    if(boolean): print \"Hello\"\n     else: print \"Bye\""
 --- !u!222 &909400357
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9830,9 +9830,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Page Three:\n\nGiven a false condition in an if logic block,\nif there
-    is an else logic block, then that \nblock would be executed.\n\nTry Code to apply
-    what you've learned\nPrevious Page to review the material\n"
+  m_Text: "Page Three:\n\nExample in Python -\nx = -1\nif (x > 0): //doesn't meet
+    this condition\n    print (\"Postive\")\nelse: //executes this condition\n    print
+    (\"Negative\")\n\n//prints: Negative\n\nTry Code to apply what you've learned\nPrevious
+    Page to review the material\n"
 --- !u!222 &1531306919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10223,7 +10224,13 @@ MonoBehaviour:
 
     In computer science, if/else statements
 
-    are used to control logic flow.
+    are used to control logic flow. Given a
+
+    true condition in an if logic block,
+
+    the code within that block would be
+
+    executed.
 
 
     Next Page to continue
@@ -11155,21 +11162,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Page Two:
-
-
-    Given a true condition in an if logic block,
-
-    the code within that block would be
-
-    executed.
-
-
-    Next Page to continue
-
-    Previous Page to go back
-
-'
+  m_Text: "Page Two:\n\nGiven a false condition in an if logic block,\nif there is
+    an else logic block, then the else \nblock would be executed.\n\nNext Page to
+    continue\nPrevious Page to go back\n"
 --- !u!222 &1865914524
 CanvasRenderer:
   m_ObjectHideFlags: 0
