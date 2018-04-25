@@ -15,6 +15,7 @@ TagManager:
   - Xoption2
   - Xoption3
   - Xoption4
+  - Enemy Ship
   layers:
   - Default
   - TransparentFX

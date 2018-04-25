@@ -1785,7 +1785,6 @@ GameObject:
   - component: {fileID: 369629245}
   - component: {fileID: 369629244}
   - component: {fileID: 369629249}
-  - component: {fileID: 369629248}
   m_Layer: 5
   m_Name: TryAgainButton
   m_TagString: TryAgain
@@ -1862,7 +1861,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 369629248}
+      - m_Target: {fileID: 0}
         m_MethodName: SpawnWaveOne
         m_Mode: 1
         m_Arguments:
@@ -1908,23 +1907,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 369629242}
---- !u!114 &369629248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 369629242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be51bb884fa3873479a1519a1161ce52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hazards:
-  - {fileID: 1262101059992330, guid: 7df0fe775937d584285d4525ab67809b, type: 2}
-  - {fileID: 1740190016711492, guid: 452d66179ece9a94abccf5834950327a, type: 2}
-  - {fileID: 1415025604736784, guid: 08deb6424a69fc74787ebcb874abeca3, type: 2}
-  - {fileID: 1262101059992330, guid: 7df0fe775937d584285d4525ab67809b, type: 2}
-  hazardCount: 4
 --- !u!82 &369629249
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3694,8 +3676,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hazards:
-  - {fileID: 1629084654436242, guid: f63cacb897af0fb49a6746517442027b, type: 2}
-  hazardCount: 1
+  - {fileID: 1262101059992330, guid: 7df0fe775937d584285d4525ab67809b, type: 2}
+  - {fileID: 1740190016711492, guid: 452d66179ece9a94abccf5834950327a, type: 2}
+  - {fileID: 1415025604736784, guid: 08deb6424a69fc74787ebcb874abeca3, type: 2}
+  - {fileID: 1262101059992330, guid: 7df0fe775937d584285d4525ab67809b, type: 2}
+  hazardCount: 4
 --- !u!82 &879620144
 AudioSource:
   m_ObjectHideFlags: 0

@@ -37,13 +37,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4146933252969758}
   - component: {fileID: 114609396917367046}
-  - component: {fileID: 114869271025371310}
   - component: {fileID: 54540152570513440}
   - component: {fileID: 135116974351008970}
   - component: {fileID: 82037447204777698}
+  - component: {fileID: 114785462770429438}
   m_Layer: 0
   m_Name: 'NoMove Enemy Ship '
-  m_TagString: Enemy
+  m_TagString: Enemy Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 2}
   playerExplosion: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 2}
   scoreValue: 0
---- !u!114 &114869271025371310
+--- !u!114 &114785462770429438
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -292,13 +292,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1629084654436242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef9e2f0e1d00e1b4ab3b5b56dcabc825, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b5e0d997fe98794896012e9b3dda650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 1965919407458720, guid: 6768e73a605ba77438bb181d3cef4d66, type: 2}
+  shot: {fileID: 1965919407458720, guid: ad63cab5635ee1d4a9dcc8522a0b2496, type: 2}
   shotSpawn: {fileID: 4066084116098802}
-  fireRate: 1.5
-  delay: 0.5
 --- !u!135 &135116974351008970
 SphereCollider:
   m_ObjectHideFlags: 1
