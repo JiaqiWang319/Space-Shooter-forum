@@ -17,7 +17,7 @@ public class Forum_Submit_TEXT : MonoBehaviour {
 		
 	}
 	public void create_new_text () {
-		/*
+		
 		MySqlConnection mycon = new MySqlConnection(constr);
 		mycon.Open(); 
 		Debug.Log("success!");
@@ -28,10 +28,10 @@ public class Forum_Submit_TEXT : MonoBehaviour {
 			Debug.Log("Create a new text success!"); 
 
 		mycon.Close();
-		*/
-		/*
-		SceneManager.LoadScene(3);
-		*/
+
+
+		SceneManager.LoadScene(1);
+
 	}
 	// Update is called once per frame
 	void Update () {

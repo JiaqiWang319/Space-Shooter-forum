@@ -17,13 +17,13 @@ public class ShowForumText : MonoBehaviour {
 	void Start () {
 		//text1.text = "hello \n\n"+"here!\n\n" +"how are you?\n\n";
 		//Debug.Log (text1.text);
-		//print_forum_text ();
-		text1.text="2018-04-20 17:25:41     Learn new concepts by solving fun challenges in 25+ languages addressing all the hot programming topics.\n\n"
+		print_forum_text ();
+		/*text1.text="2018-04-20 17:25:41     Learn new concepts by solving fun challenges in 25+ languages addressing all the hot programming topics.\n\n"
 			+"2018-04-20 17:26:49     In a matter of hours, discover new languages, algorithms or tricks in courses crafted by top developers.\n\n"
 		+"2018-04-20 17:32:07     Our approach has been designed to lead advanced developers to the next level.\n\n"
 		+"2018-04-20 17:35:41     We're smarter togethe!!Meet like-minded enthusiasts, ask for help and have your code reviewed.\n\n"
 		+"2018-04-20 17:35:41     Compare solutions and learn tips from the best programmers.";
-		
+		*/
 	}
 	void print_forum_text(){
 		MySqlConnection mycon = new MySqlConnection(constr);
@@ -53,6 +53,6 @@ public class ShowForumText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//print_forum_text();
+		print_forum_text();
 	}
 }
