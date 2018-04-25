@@ -9819,7 +9819,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
@@ -9830,19 +9830,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Page Three:
-
-
-    For loops run the same code with different
-
-    values each time.
-
-
-    Try Code to apply what you''ve learned
-
-    Previous Page to review the material
-
-'
+  m_Text: "Page Three:\n\nExample in Python-\n//for each value 0 through 3, not\ninclusive
+    of the outer value, print out\nthe value of i\nfor i in range(0, 3):\n    print(i)\n//prints:
+    \n0\n1\n2\n\nTry Code to apply what you've learned\nPrevious Page to review the
+    material\n"
 --- !u!222 &1531306919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11162,6 +11153,10 @@ MonoBehaviour:
     There are various types of loops that one
 
     can use to iterate through stuctures.
+
+    For loops run the same code with different
+
+    values each time.
 
 
     Next Page to continue
