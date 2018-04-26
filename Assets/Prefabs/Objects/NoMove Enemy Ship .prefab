@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114785462770429438}
   m_Layer: 0
   m_Name: 'NoMove Enemy Ship '
-  m_TagString: Enemy Ship
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,6 +297,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shot: {fileID: 1965919407458720, guid: ad63cab5635ee1d4a9dcc8522a0b2496, type: 2}
   shotSpawn: {fileID: 4066084116098802}
+  playerTransform: {fileID: 0}
+  playerBolt: {fileID: 0}
+  thrust: 3
+  enemyBolt: {fileID: 0}
+  enemyShot: {fileID: 0}
+  enemyShotSpawn: {fileID: 0}
+  enemyTransform: {fileID: 0}
 --- !u!135 &135116974351008970
 SphereCollider:
   m_ObjectHideFlags: 1
